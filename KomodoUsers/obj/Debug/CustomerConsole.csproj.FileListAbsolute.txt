@@ -1,0 +1,11 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\bin\Debug\KomodoUsers.exe.config
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\bin\Debug\KomodoUsers.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\bin\Debug\KomodoUsers.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\bin\Debug\CustomerRepo.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\bin\Debug\CustomerRepo.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\bin\Debug\CustomerRepo.exe.config
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\obj\Debug\CustomerConsole.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\obj\Debug\CustomerConsole.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\obj\Debug\CustomerConsole.csproj.CopyComplete
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\obj\Debug\KomodoUsers.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\KomodoUsers\obj\Debug\KomodoUsers.pdb

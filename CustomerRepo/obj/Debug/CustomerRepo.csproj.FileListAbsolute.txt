@@ -1,0 +1,6 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerRepo\bin\Debug\CustomerRepo.exe.config
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerRepo\bin\Debug\CustomerRepo.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerRepo\bin\Debug\CustomerRepo.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerRepo\obj\Debug\CustomerRepo.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerRepo\obj\Debug\CustomerRepo.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerRepo\obj\Debug\CustomerRepo.pdb
