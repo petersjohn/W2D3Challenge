@@ -41,16 +41,37 @@ namespace CustomerRepo.REPOs
 
         //update
 
-        public bool UpdateCustomer(int memberID, string lastName, DateTime birthDate, DateTime enrollDate)
+        public bool UpdateCustomerLastName(int memberID, string lastName)
         {
             Customer content = GetCustomerByID(memberID);
             if (content != null)
             {
-                content.CustomerID = memberID;
+               
                 content.LastName = lastName;
-                content.BirthDate = birthDate;
-                content.EnrollDate = enrollDate;
+                 return true;
+            }
+            return false;
+        }
 
+        public bool UpdateCustomerDOB(int memberID, DateTime birthDate)
+        {
+            Customer content = GetCustomerByID(memberID);
+            if (content != null)
+            {
+
+                content.BirthDate = birthDate;
+                return true;
+            }
+            return false;
+        }
+
+        public bool UpdateCustomerEnrollDate(int memberID, DateTime enrollDate)
+        {
+            Customer content = GetCustomerByID(memberID);
+            if (content != null)
+            {
+
+                content.EnrollDate = enrollDate;
                 return true;
             }
             return false;

@@ -16,13 +16,14 @@ namespace CustomerTracker
 
         public void Start()
         {
+            SeedContentToList();
             RunMenu();
         }
 
         private void RunMenu()
         {
             while (_isRunning)
-            {
+            {   
                 string userInput = GetMenuSelection();
                 OpenMenuItem(userInput);
             }
@@ -149,7 +150,7 @@ namespace CustomerTracker
             string userInputBirthDate = Console.ReadLine();
             DateTime birthDate = DateTime.ParseExact(userInputBirthDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Enter the Enrollment Date in Member Plan: ");
+            Console.WriteLine("Enter the Enrollment Date in Member Plan (mm/dd/yyyy): ");
             string userInputEnrollDate = Console.ReadLine();
             DateTime enrollDate = DateTime.ParseExact(userInputEnrollDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
 
@@ -171,53 +172,44 @@ namespace CustomerTracker
         {
             Console.Clear();
             Console.WriteLine("Enter the member ID");
-            int memberID = int.Parse(Console.ReadLine());
 
-            Customer customer = _repo.GetCustomerByID(memberID);
-            if (customer == null)
-            {
-                Console.WriteLine("Customer Not Found");
-                return;
-            }
-            Console.WriteLine("Enter the new member enrollment date (Format mm/dd/yyyy)");
+            int memberID = int.Parse(Console.ReadLine());
+            bool status = false;
+            Console.WriteLine("Enter the member enrollment date (Format mm/dd/yyyy)");
             string userInputEnrollDate = Console.ReadLine();
             DateTime enrollDate = DateTime.ParseExact(userInputEnrollDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-            if (_repo.UpdateCustomer(memberID, customer.LastName, customer.BirthDate, enrollDate))
+            if (_repo.UpdateCustomerEnrollDate(memberID, enrollDate))
             {
-                Console.WriteLine("Update Successful");
-                ReturnToMenu();
+                status = true;
+                StatusMessage(status);
             }
             else
             {
-                Console.WriteLine("Update Failed");
-                ReturnToMenu();
+                StatusMessage(status);
             }
+
+
+
         }
 
         private void UpdateMemberAge()
         {
             Console.Clear();
             Console.WriteLine("Enter the member ID");
-            int memberID = int.Parse(Console.ReadLine());
 
-            Customer customer = _repo.GetCustomerByID(memberID);
-            if (customer == null)
-            {
-                Console.WriteLine("Customer Not Found");
-                return;
-            }
+            int memberID = int.Parse(Console.ReadLine());
+            bool status = false;
             Console.WriteLine("Enter the member birth date (Format mm/dd/yyyy)");
             string userInputBirthDate = Console.ReadLine();
             DateTime birthDate = DateTime.ParseExact(userInputBirthDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-            if(_repo.UpdateCustomer(memberID, customer.LastName, birthDate, customer.EnrollDate))
+            if(_repo.UpdateCustomerDOB(memberID, birthDate))
             {
-                Console.WriteLine("Update Successful");
-                ReturnToMenu();
+                status = true;
+                StatusMessage(status);
             }
             else
             {
-                Console.WriteLine("Update Failed");
-                ReturnToMenu();
+                StatusMessage(status);
             }
 
 
@@ -232,30 +224,17 @@ namespace CustomerTracker
 
             Console.WriteLine("Enter the new last name: ");
             string lastName = Console.ReadLine();
-
-            Customer customer = _repo.GetCustomerByID(memberID);
-            if(customer != null)
+            bool status = false;
+            if(_repo.UpdateCustomerLastName(memberID, lastName))
             {
-                if(_repo.UpdateCustomer(customer.CustomerID, lastName, customer.BirthDate, customer.EnrollDate))
-                {
-                    Console.WriteLine("Update Successful.");
-                    ReturnToMenu();
-                }
-                else
-                {
-                    Console.WriteLine("Update Failed");
-                    ReturnToMenu();
-                }
-                
+                status = true;
+                StatusMessage(status);
             }
             else
             {
-                Console.WriteLine("Update Failed, please enter a valid member ID");
-                ReturnToMenu();
+                StatusMessage(status);
             }
-
-           
-            
+  
         }
 
         private void DisplayAllMembers()
@@ -273,11 +252,22 @@ namespace CustomerTracker
 
         private void DisplayCustomer(Customer item)
         {
+
             Console.WriteLine($"Member ID: {item.CustomerID}\n" +
                 $"Member Last Name: {item.LastName}\n" +
                 $"Member Age: {item.Age}\n" +
-                $"Member Length of Patronage: {item.EnrollmentYears}\n" +
-                $"\n");
+                $"Member Length of Patronage: {item.EnrollmentYears}\n");
+                
+            if (item.EnrollmentYears >= 5) 
+            {
+                Console.WriteLine("Thank You for being a Gold Member!\n");
+                
+            }
+            else
+            {
+                Console.WriteLine("Thank you for being a loyal member!\n");
+               
+            }
 
         }
 
@@ -307,6 +297,31 @@ namespace CustomerTracker
                 Console.ReadKey();
                 RunMenu();
             }
+        }
+
+        private void StatusMessage(bool status)
+        {
+            if (status)
+            {
+                Console.WriteLine("Update Successful!");
+                ReturnToMenu();
+            }
+            else
+            {
+                Console.WriteLine("Update Failed. Did you enter the correct Member ID?");
+                ReturnToMenu();
+            }
+        }
+
+        private void SeedContentToList()
+        {
+             
+            int memberID = 1234;
+            string lastName = "Test";
+            DateTime birthDate = DateTime.ParseExact("05/16/1986", "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            DateTime enrollDate = DateTime.ParseExact("01/18/2015", "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            Customer customer = new Customer(memberID, lastName, birthDate, enrollDate);
+            _repo.CreateCustomer(customer);
         }
     }
 }

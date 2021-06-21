@@ -1,0 +1,17 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\obj\Debug\CustomerTracker_Tests.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\obj\Debug\CustomerTracker_Tests.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\CustomerTracker_Tests.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\CustomerTracker_Tests.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\CustomerRepo.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\CustomerRepo.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\CustomerRepo.exe.config
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\obj\Debug\CustomerTracker_Tests.csproj.CopyComplete
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\obj\Debug\CustomerTracker_Tests.dll
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\W2D3Challenge\CustomerTracker_Tests\obj\Debug\CustomerTracker_Tests.pdb

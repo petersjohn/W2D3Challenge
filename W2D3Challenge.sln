@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerConsole", "KomodoUs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRepo", "CustomerRepo\CustomerRepo.csproj", "{F97FBD8A-B507-408E-A3F3-362A9F8BD6D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerTracker_Tests", "CustomerTracker_Tests\CustomerTracker_Tests.csproj", "{BAD90AB8-A87F-43ED-BF41-D46556FE472D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F97FBD8A-B507-408E-A3F3-362A9F8BD6D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F97FBD8A-B507-408E-A3F3-362A9F8BD6D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F97FBD8A-B507-408E-A3F3-362A9F8BD6D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD90AB8-A87F-43ED-BF41-D46556FE472D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD90AB8-A87F-43ED-BF41-D46556FE472D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD90AB8-A87F-43ED-BF41-D46556FE472D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD90AB8-A87F-43ED-BF41-D46556FE472D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
